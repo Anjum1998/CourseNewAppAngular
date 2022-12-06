@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AddCourseComponent {
 
+  courseTitle=""
+  courseVenue=""
+  courseDescription=""
+  courseDuration=""
+  courseDate=""
+readValue=()=>
+{
+  let data:any={
+    "courseTitle":this.courseTitle,"courseVenue":this.courseVenue,"courseDescription":this.courseDescription,"courseDuration":this.courseDuration,
+    "courseDate":this.courseDate
+  }
+  console.log(data)
+
+
+}
+  
+
 }
